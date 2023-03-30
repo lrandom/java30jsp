@@ -1,18 +1,19 @@
-package com.example.javaweb30jsp;
+package com.example.javaweb30jsp.servlet.auth;
 
+import com.example.javaweb30jsp.Config;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 
-@WebServlet(name = "ServletDeleteCookie", value = "/ServletDeleteCookie")
-public class ServletDeleteCookie extends HttpServlet {
+@WebServlet(name = "ServletLogout", value = "/logout")
+public class ServletLogout extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Cookie cookie = new Cookie("school", "niit");
-        cookie.setMaxAge(0);
-        response.addCookie(cookie);
+        HttpSession httpSession = request.getSession();
+        httpSession.removeAttribute("user");
+        response.sendRedirect(Config.BASE_URL+"login");
     }
 
     @Override

@@ -1,5 +1,6 @@
-package com.example.javaweb30jsp;
+package com.example.javaweb30jsp.servlet.auth;
 
+import com.example.javaweb30jsp.Config;
 import com.example.javaweb30jsp.models.User;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -7,18 +8,19 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 
-@WebServlet(name = "ServletGetSession", value = "/ServletGetSession")
-public class ServletGetSession extends HttpServlet {
+@WebServlet(name = "ServletProfile", value = "/profile")
+public class ServletProfile extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession httpSession = request.getSession();
-        if(httpSession.getAttribute("user") != null){
+        if (httpSession.getAttribute("user") == null) {
+            response.sendRedirect(Config.BASE_URL+"login");
+        } else {
             User user = (User) httpSession.getAttribute("user");
-            response.setContentType("text/html;charset=UTF-8");
-            response.getWriter().write("<h1>" + user.getId() + "</h1>");
-            response.getWriter().write("<h1>" + user.getEmail() + "</h1>");
+            request.setAttribute("user", user);
+            request.getRequestDispatcher("/WEB-INF/jsp/profile.jsp")
+                    .forward(request, response);
         }
-
     }
 
     @Override
