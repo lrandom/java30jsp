@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="javaweb30jsp:war" />
+      <artifact name="javaweb30jsp:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,20 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="276b7ae3-5ae8-4ad3-80da-e5fef8fe074f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/main.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/main_ja_JP.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/main_vi_VN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/javaweb30jsp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/javaweb30jsp_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletAddCookie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletDeleteCookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/servlet/auth/ServletProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletGetCookie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletGetSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHello2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/servlet/auth/ServletLogout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletSetSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/servlet/ServletLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/servlet/auth/ServletLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/Config.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +33,7 @@
         <option value="HTML File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="Jspx File" />
       </list>
     </option>
   </component>
@@ -50,6 +48,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="session-5" />
+                    <option name="lastUsedInstant" value="1681819181" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="session-4-login" />
                     <option name="lastUsedInstant" value="1680181434" />
@@ -70,6 +72,9 @@
         </option>
       </RecentBranches>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/home.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -99,11 +104,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.7">
+  <component name="RunManager" selected="GlassFish Server.GlassFish 6.1.0">
     <configuration name="GlassFish 6.1.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 6.1.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/javaweb30jsp-1.0-SNAPSHOT" />
       <deployment>
@@ -384,6 +390,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680005142907</updated>
       <workItem from="1680005146486" duration="4545000" />
+      <workItem from="1681819052223" duration="6103000" />
     </task>
     <servers />
   </component>
