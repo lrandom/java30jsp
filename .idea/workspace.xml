@@ -10,17 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="276b7ae3-5ae8-4ad3-80da-e5fef8fe074f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main_ja_JP.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main_vi_VN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/javaweb30jsp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/javaweb30jsp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/db/ProductDAL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="Jspx File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +42,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="cart" />
+                    <option name="lastUsedInstant" value="1681825661" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="session-5" />
                     <option name="lastUsedInstant" value="1681819181" />
@@ -390,7 +388,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680005142907</updated>
       <workItem from="1680005146486" duration="4545000" />
-      <workItem from="1681819052223" duration="6103000" />
+      <workItem from="1681819052223" duration="7366000" />
     </task>
     <servers />
   </component>

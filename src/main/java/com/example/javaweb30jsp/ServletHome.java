@@ -1,25 +1,22 @@
 package com.example.javaweb30jsp;
 
+import com.example.javaweb30jsp.db.ProductDAL;
+import com.example.javaweb30jsp.models.Product;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebServlet(name = "ServletHome", value = "/ServletHome")
 public class ServletHome extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String[] listName = {"Nguyen Van A", "Nguyen Van B", "Nguyen Van C"};
-        request.setAttribute("list", listName);
-        request.setAttribute("age", 18);
-        String language = "en";
-        if (request.getSession().getAttribute("language") != null) {
-            language = (String) request.getSession().getAttribute("language");
-        }
-        request.setAttribute("language", language);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
-        dispatcher.forward(request, response);
+        ProductDAL productDAL = new ProductDAL();
+        ArrayList<Product> products = productDAL.getList();
+        request.setAttribute("products", products);
+        request.getRequestDispatcher("home.jsp").forward(request, response);
     }
 
     @Override

@@ -16,57 +16,12 @@
     <meta charset="utf-8"/>
 </head>
 <body>
-<%--<p>
-    <c:out value="Hello"/>
-<ul>--%>
-<%--  <c:forEach items="${list}" var="item">
-      <li>
-          <c:out value="${item}"/>
-      </li>
-  </c:forEach>
-
-
-  <c:if test="${age >= 18}">
-      <c:out value="Bạn đã đủ tuổi kết hôn"/>
-  </c:if>
-
-  <c:choose>
-      <c:when test="${age >= 18}">
-          <c:out value="Bạn đã đủ tuổi kết hôn"/>
-      </c:when>
-      <c:when test="${age >= 16}">
-          <c:out value="Bạn chưa đủ tuổi kết hôn"/>
-      </c:when>
-      <c:otherwise>
-          <c:out value="Bạn chưa đủ tuổi kết hôn"/>
-      </c:otherwise>
-  </c:choose>
-
-  <c:set var="listAge" value="12,13,14,15"/>
-  <c:forTokens items="${listAge}" var="item" delims=",">
-      <c:out value="${item}"/>
-  </c:forTokens>
-
-  <fmt:formatNumber value="${1000000}" type="currency" currencySymbol="VND"/>
---%>
-<button>
-    <fmt:message key="Submit"/>
-</button>
-
-<p>
-    <fmt:message key="Welcome"/>
-</p>
-
-<form method="post" action="<%=Config.BASE_URL+"ServletHome"%>">
-    <select name="language">
-        <option value="en">English</option>
-        <option value="vi_VN">VietNamese</option>
-        <option value="ja_JP">Japanese</option>
-    </select>
-    <button>Change Language</button>
-</form>
-
-</ul>
-</p>
+<c:forEach items="${products}" var="product">
+    <div>
+        <h4>${product.getName()}</h4>
+        <p>${product.getPrice()}</p>
+        <a href="">Add To Cart</a>
+    </div>
+</c:forEach>
 </body>
 </html>
