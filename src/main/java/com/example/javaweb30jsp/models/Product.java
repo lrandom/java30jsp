@@ -6,6 +6,7 @@ public class Product {
     private String description;
     private double price;
 
+
     private String path;//ảnh sp
 
     public Product() {
