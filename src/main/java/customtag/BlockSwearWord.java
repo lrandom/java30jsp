@@ -9,6 +9,9 @@ import jakarta.servlet.jsp.tagext.*;
 import java.io.IOException;
 
 public class BlockSwearWord extends SimpleTagSupport {
+    private String[] swearWords = new String[]{
+            "shit", "damn"
+    };
     private String content;
 
     public void setContent(String content) {
@@ -18,7 +21,12 @@ public class BlockSwearWord extends SimpleTagSupport {
     @Override
     public void doTag() throws JspException, IOException {
         JspWriter jspWriter = getJspContext().getOut();
-        jspWriter.write(this.content.replaceAll("shit", "***"));
+        String filterContent = "";
+        for (String swearWord : swearWords
+        ) {
+            filterContent = this.content.replaceAll(swearWord, "***");
+        }
+        jspWriter.write(filterContent);
     }
 
     @Override
