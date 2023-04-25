@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="276b7ae3-5ae8-4ad3-80da-e5fef8fe074f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/db/ProductDAL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javaweb30jsp/ServletHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="276b7ae3-5ae8-4ad3-80da-e5fef8fe074f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -388,7 +382,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680005142907</updated>
       <workItem from="1680005146486" duration="4545000" />
-      <workItem from="1681819052223" duration="7366000" />
+      <workItem from="1681819052223" duration="7530000" />
     </task>
     <servers />
   </component>
